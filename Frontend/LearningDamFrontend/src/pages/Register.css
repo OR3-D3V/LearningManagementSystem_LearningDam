@@ -1,0 +1,379 @@
+/* Page wrapper */
+.register-page {
+    background: #ffffff;
+    color: #071634;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Main two-column register card */
+.register-card {
+    border: 1px solid #dce5f1;
+    border-radius: 8px;
+    box-shadow: 0 18px 42px rgba(23, 43, 77, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    margin: 46px auto;
+    max-width: 1240px;
+    overflow: hidden;
+}
+
+/* Left information panel */
+.register-side {
+    background: linear-gradient(135deg, #f4f9ff, #eef7ff);
+    border-right: 1px solid #dce5f1;
+    padding: 56px;
+}
+
+.register-side h1 {
+    font-size: clamp(2rem, 4vw, 2.65rem);
+    font-weight: 800;
+    line-height: 1.14;
+    margin: 0 0 18px;
+}
+
+.register-side h1 span {
+    color: #075df2;
+    display: block;
+}
+
+.register-side p,
+.register-heading p {
+    color: #34425f;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Decorative book illustration */
+.register-books {
+    height: 270px;
+    margin: 24px 0 28px;
+    position: relative;
+}
+
+.doodle {
+    color: #98bcff;
+    font-weight: 800;
+    position: absolute;
+}
+
+.doodle-one {
+    right: 90px;
+    top: 22px;
+    transform: rotate(-12deg);
+}
+
+.doodle-two {
+    left: 55px;
+    top: 42px;
+}
+
+.book {
+    border-radius: 6px;
+    box-shadow: 0 10px 24px rgba(5, 70, 160, 0.12);
+    height: 38px;
+    left: 160px;
+    position: absolute;
+    width: 260px;
+}
+
+.book-one {
+    background: linear-gradient(90deg, #ffffff 0 76%, #075df2 76%);
+    bottom: 92px;
+}
+
+.book-two {
+    background: linear-gradient(90deg, #ffd65a 0 76%, #f4ad14 76%);
+    bottom: 58px;
+    left: 145px;
+}
+
+.book-three {
+    background: linear-gradient(90deg, #ffffff 0 76%, #075df2 76%);
+    bottom: 24px;
+    left: 170px;
+}
+
+.book-cup {
+    background: #075df2;
+    border-radius: 0 0 15px 15px;
+    bottom: 18px;
+    height: 88px;
+    left: 60px;
+    position: absolute;
+    width: 74px;
+}
+
+.book-cup::before,
+.book-cup::after {
+    background: #f4ad14;
+    border-radius: 4px;
+    content: "";
+    height: 86px;
+    position: absolute;
+    top: -62px;
+    width: 9px;
+}
+
+.book-cup::before {
+    left: 22px;
+    transform: rotate(-8deg);
+}
+
+.book-cup::after {
+    background: #ffffff;
+    left: 44px;
+    transform: rotate(12deg);
+}
+
+/* Benefit list */
+.register-benefits {
+    display: grid;
+    gap: 20px;
+}
+
+.register-benefits article {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+.benefit-icon {
+    align-items: center;
+    border-radius: 8px;
+    display: inline-flex;
+    flex: 0 0 54px;
+    font-size: 1.4rem;
+    height: 54px;
+    justify-content: center;
+}
+
+.benefit-icon.blue {
+    background: #eaf2ff;
+    color: #075df2;
+}
+
+.benefit-icon.green {
+    background: #eaf8ef;
+    color: #20a464;
+}
+
+.benefit-icon.gold {
+    background: #fff5da;
+    color: #f4ad14;
+}
+
+.benefit-icon.purple {
+    background: #f2eaff;
+    color: #8956e8;
+}
+
+.register-benefits strong {
+    display: block;
+    font-weight: 800;
+}
+
+.register-benefits small {
+    color: #34425f;
+    display: block;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+/* Right form panel */
+.register-form-panel {
+    background: #ffffff;
+    padding: 56px 64px;
+}
+
+.register-heading h2 {
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+
+/* Form controls */
+.register-form {
+    margin-top: 28px;
+}
+
+.register-field {
+    margin-bottom: 18px;
+}
+
+.register-field label {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.register-input {
+    align-items: center;
+    border: 1px solid #cfd8e6;
+    border-radius: 7px;
+    display: flex;
+    gap: 12px;
+    min-height: 52px;
+    padding: 0 16px;
+}
+
+.register-input svg {
+    color: #7c8aa3;
+    flex: 0 0 auto;
+}
+
+.register-input input,
+.register-field select {
+    border: 0;
+    color: #071634;
+    flex: 1;
+    font: inherit;
+    min-width: 0;
+    outline: 0;
+}
+
+.register-field select {
+    border: 1px solid #cfd8e6;
+    border-radius: 7px;
+    min-height: 52px;
+    padding: 0 16px;
+    width: 100%;
+}
+
+/* Password status text */
+.password-message {
+    color: #c93838;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 2px 0 14px;
+}
+
+.password-message.success {
+    color: #16884f;
+}
+
+/* Submit button */
+.register-submit {
+    background: #075df2;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 12px 22px rgba(7, 93, 242, 0.18);
+    color: #ffffff;
+    font-weight: 800;
+    min-height: 52px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+/* Footer */
+.register-footer {
+    background: linear-gradient(135deg, #06366f, #021f46);
+    color: #ffffff;
+    display: grid;
+    gap: 34px;
+    grid-template-columns: 1.4fr repeat(3, 1fr);
+    padding: 36px 6vw;
+}
+
+.register-footer-brand {
+    display: flex;
+    gap: 14px;
+}
+
+.register-footer-brand svg {
+    color: #0969f8;
+    flex: 0 0 auto;
+    font-size: 2.3rem;
+}
+
+.register-footer h2,
+.register-footer h3 {
+    font-size: 1.05rem;
+    font-weight: 800;
+    margin: 0 0 12px;
+}
+
+.register-footer p,
+.register-footer a {
+    color: #d8e8ff;
+    display: block;
+    line-height: 1.7;
+    margin: 0 0 6px;
+    text-decoration: none;
+}
+
+/* Newsletter form */
+.register-newsletter {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.register-newsletter input {
+    border: 0;
+    border-radius: 6px;
+    min-height: 44px;
+    min-width: 0;
+    padding: 0 14px;
+    width: 100%;
+}
+
+.register-newsletter button {
+    background: #075df2;
+    border: 0;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 800;
+    padding: 0 16px;
+}
+
+/* Tablet layout */
+@media (max-width: 1050px) {
+    .register-card,
+    .register-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .register-side,
+    .register-form-panel {
+        padding: 38px;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 780px) {
+    .register-card,
+    .register-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .register-card {
+        margin: 24px 14px;
+    }
+
+    .register-side {
+        border-bottom: 1px solid #dce5f1;
+        border-right: 0;
+    }
+
+    .register-books {
+        transform: scale(0.88);
+        transform-origin: left center;
+    }
+}
+
+/* Narrow mobile layout */
+@media (max-width: 520px) {
+    .register-side,
+    .register-form-panel {
+        padding: 28px 20px;
+    }
+
+    .register-books {
+        height: 220px;
+        transform: scale(0.7);
+    }
+
+    .register-newsletter {
+        flex-direction: column;
+    }
+}

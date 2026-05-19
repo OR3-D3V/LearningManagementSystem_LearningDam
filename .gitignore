@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+Backend/node_modules/
+Frontend/LearningDamFrontend/node_modules/
+
+# Build output
+dist/
+dist-ssr/
+Backend/dist/
+Frontend/LearningDamFrontend/dist/
+build/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# Runtime and cache files
+.cache/
+.vite/
+.eslintcache
+tmp/
+temp/
+*.pid
+*.seed
+
+# Database and generated local data
+*.sqlite
+*.sqlite3
+*.db
+Backend/db/*.sqlite
+Backend/db/*.sqlite3
+Backend/db/*.db
+
+# IDE and editor files
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local learning notes
+learnt.md
