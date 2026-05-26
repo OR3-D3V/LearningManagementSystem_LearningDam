@@ -97,3 +97,11 @@ The `.env` file should not be committed to git.
 ## Next Session Goal
 
 Build the Express register endpoint using bcrypt and JWT, then connect it properly to the existing React Register page.
+
+
+<!-- How i Setup the database -->
+1. The user is what is declared in the database, so i mean when i created the server that was the user name.
+2. The password is specified
+3. The port too is useally 5432
+4. the database is the within a server.
+5. Host is what hosts the server

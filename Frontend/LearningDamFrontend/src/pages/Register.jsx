@@ -72,8 +72,10 @@ function Register() {
                 }
             )
         })
-
-        console.log(response)
+        
+        let data = await response.json();
+        console.log(data)
+        
     }
 
     return (
@@ -220,7 +222,7 @@ function Register() {
                             {passwordMatch ? "Password Match" : "Passwords do not match"}
                         </p>
 
-                        <button type="submit" className="register-submit">
+                        <button type="submit" className="register-submit" onSubmit={registerUser}>
                             Create Account
                         </button>
                     </form>
