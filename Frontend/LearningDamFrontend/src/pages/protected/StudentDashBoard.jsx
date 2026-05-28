@@ -37,7 +37,7 @@ function StudentDashboard(){
         <>
             <div className="d-flex flex-row vh-100">
                 <SideBar userObj={userObj} className="sideBar"/>
-                <Dashboard></Dashboard>
+                <Dashboard userObj={userObj}/>
             </div>
             
         </>

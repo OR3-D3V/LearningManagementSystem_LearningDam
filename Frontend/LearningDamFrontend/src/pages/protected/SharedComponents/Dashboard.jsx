@@ -1,7 +1,8 @@
-function Dashboard(){
+import StudentOverview from "./StudentOverview"
+function Dashboard(props){
     return(
-        <div className="bg-success w-25">
-            <h1>Hi</h1>
+        <div className="dashboard-shell">
+            <StudentOverview userObj={props.userObj}/>
         </div>
     )
 }
