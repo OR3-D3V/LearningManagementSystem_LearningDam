@@ -19,7 +19,7 @@ async function comparePassword(plainPassword, hashPassword){
 async function createUser(name, email, role, hashedPassword){
     const result  = await pool.query('INSERT INTO users (email, password, role, first_name, last_name) VALUES($1, $2, $3, $4, $5) RETURNING *', [email, hashedPassword, role, name, name]);
 
-    return result.row;
+    return result.rows[0];
 }
 
 async function checkIfUserExists(email){
@@ -28,9 +28,18 @@ async function checkIfUserExists(email){
     // For Debugging
     // console.log(userExists)
     // console.log(userExists.rowCount)
-
+    // console.log(email)
+    // console.log(userExists)
+    
     if(userExists.rowCount == 1){
-        return true;
+        return {
+            hasAccount : true,
+            userObj : userExists.rows[0]
+        }
+    }
+
+    return {
+        hasAccount : false
     }
 }
 

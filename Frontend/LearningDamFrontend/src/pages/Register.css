@@ -1,15 +1,15 @@
 /* Page wrapper */
 .register-page {
     background: #ffffff;
-    color: #071634;
+    color: #2a1f46;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 /* Main two-column register card */
 .register-card {
-    border: 1px solid #dce5f1;
+    border: 1px solid #e5dcfa;
     border-radius: 8px;
-    box-shadow: 0 18px 42px rgba(23, 43, 77, 0.08);
+    box-shadow: 0 18px 42px rgba(76, 29, 149, 0.09);
     display: grid;
     grid-template-columns: 1fr 1.1fr;
     margin: 46px auto;
@@ -19,8 +19,8 @@
 
 /* Left information panel */
 .register-side {
-    background: linear-gradient(135deg, #f4f9ff, #eef7ff);
-    border-right: 1px solid #dce5f1;
+    background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+    border-right: 1px solid #e5dcfa;
     padding: 56px;
 }
 
@@ -32,13 +32,13 @@
 }
 
 .register-side h1 span {
-    color: #075df2;
+    color: #7c3aed;
     display: block;
 }
 
 .register-side p,
 .register-heading p {
-    color: #34425f;
+    color: #5f527e;
     line-height: 1.7;
     margin: 0;
 }
@@ -51,7 +51,7 @@
 }
 
 .doodle {
-    color: #98bcff;
+    color: #b79bff;
     font-weight: 800;
     position: absolute;
 }
@@ -69,7 +69,7 @@
 
 .book {
     border-radius: 6px;
-    box-shadow: 0 10px 24px rgba(5, 70, 160, 0.12);
+    box-shadow: 0 10px 24px rgba(76, 29, 149, 0.16);
     height: 38px;
     left: 160px;
     position: absolute;
@@ -77,24 +77,24 @@
 }
 
 .book-one {
-    background: linear-gradient(90deg, #ffffff 0 76%, #075df2 76%);
+    background: linear-gradient(90deg, #ffffff 0 76%, #7c3aed 76%);
     bottom: 92px;
 }
 
 .book-two {
-    background: linear-gradient(90deg, #ffd65a 0 76%, #f4ad14 76%);
+    background: linear-gradient(90deg, #ede9fe 0 76%, #8b5cf6 76%);
     bottom: 58px;
     left: 145px;
 }
 
 .book-three {
-    background: linear-gradient(90deg, #ffffff 0 76%, #075df2 76%);
+    background: linear-gradient(90deg, #ffffff 0 76%, #7c3aed 76%);
     bottom: 24px;
     left: 170px;
 }
 
 .book-cup {
-    background: #075df2;
+    background: #7c3aed;
     border-radius: 0 0 15px 15px;
     bottom: 18px;
     height: 88px;
@@ -105,7 +105,7 @@
 
 .book-cup::before,
 .book-cup::after {
-    background: #f4ad14;
+    background: #8b5cf6;
     border-radius: 4px;
     content: "";
     height: 86px;
@@ -148,23 +148,23 @@
 }
 
 .benefit-icon.blue {
-    background: #eaf2ff;
-    color: #075df2;
+    background: #f3e8ff;
+    color: #7c3aed;
 }
 
 .benefit-icon.green {
-    background: #eaf8ef;
-    color: #20a464;
+    background: #ede9fe;
+    color: #6d28d9;
 }
 
 .benefit-icon.gold {
-    background: #fff5da;
-    color: #f4ad14;
+    background: #ede9fe;
+    color: #8b5cf6;
 }
 
 .benefit-icon.purple {
-    background: #f2eaff;
-    color: #8956e8;
+    background: #f2e8ff;
+    color: #7c3aed;
 }
 
 .register-benefits strong {
@@ -173,7 +173,7 @@
 }
 
 .register-benefits small {
-    color: #34425f;
+    color: #5f527e;
     display: block;
     line-height: 1.5;
     margin-top: 4px;
@@ -208,7 +208,7 @@
 
 .register-input {
     align-items: center;
-    border: 1px solid #cfd8e6;
+    border: 1px solid #d9c9f7;
     border-radius: 7px;
     display: flex;
     gap: 12px;
@@ -217,14 +217,14 @@
 }
 
 .register-input svg {
-    color: #7c8aa3;
+    color: #7c6aa7;
     flex: 0 0 auto;
 }
 
 .register-input input,
 .register-field select {
     border: 0;
-    color: #071634;
+    color: #2a1f46;
     flex: 1;
     font: inherit;
     min-width: 0;
@@ -232,7 +232,7 @@
 }
 
 .register-field select {
-    border: 1px solid #cfd8e6;
+    border: 1px solid #d9c9f7;
     border-radius: 7px;
     min-height: 52px;
     padding: 0 16px;
@@ -248,15 +248,26 @@
 }
 
 .password-message.success {
-    color: #16884f;
+    color: #6d28d9;
+}
+
+.register-error-message {
+    background: #fff1f1;
+    border: 1px solid #efb8b8;
+    border-radius: 7px;
+    color: #bf1f1f;
+    font-size: 0.92rem;
+    font-weight: 800;
+    margin: 2px 0 14px;
+    padding: 10px 12px;
 }
 
 /* Submit button */
 .register-submit {
-    background: #075df2;
+    background: #7c3aed;
     border: 0;
     border-radius: 7px;
-    box-shadow: 0 12px 22px rgba(7, 93, 242, 0.18);
+    box-shadow: 0 12px 22px rgba(124, 58, 237, 0.24);
     color: #ffffff;
     font-weight: 800;
     min-height: 52px;
@@ -266,7 +277,7 @@
 
 /* Footer */
 .register-footer {
-    background: linear-gradient(135deg, #06366f, #021f46);
+    background: linear-gradient(135deg, #581c87, #2e1065);
     color: #ffffff;
     display: grid;
     gap: 34px;
@@ -280,7 +291,7 @@
 }
 
 .register-footer-brand svg {
-    color: #0969f8;
+    color: #c4b5fd;
     flex: 0 0 auto;
     font-size: 2.3rem;
 }
@@ -294,7 +305,7 @@
 
 .register-footer p,
 .register-footer a {
-    color: #d8e8ff;
+    color: #e9ddff;
     display: block;
     line-height: 1.7;
     margin: 0 0 6px;
@@ -318,7 +329,7 @@
 }
 
 .register-newsletter button {
-    background: #075df2;
+    background: #7c3aed;
     border: 0;
     border-radius: 6px;
     color: #ffffff;
@@ -351,7 +362,7 @@
     }
 
     .register-side {
-        border-bottom: 1px solid #dce5f1;
+        border-bottom: 1px solid #e5dcfa;
         border-right: 0;
     }
 

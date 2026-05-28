@@ -1,0 +1,79 @@
+:root {
+	--lms-purple-900: #2e1065;
+	--lms-purple-800: #581c87;
+	--lms-purple-700: #6d28d9;
+	--lms-purple-600: #7c3aed;
+	--lms-purple-400: #a78bfa;
+	--lms-purple-200: #ddd6fe;
+	--lms-purple-100: #ede9fe;
+	--lms-ink: #2a1f46;
+	--lms-soft-ink: #5f527e;
+}
+
+body {
+	color: var(--lms-ink);
+	background: #ffffff;
+}
+
+.lms-nav {
+	background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+	border: 1px solid #e5dcfa;
+}
+
+.lms-brand {
+	color: var(--lms-purple-800);
+	font-weight: 800;
+}
+
+.lms-brand:hover {
+	color: var(--lms-purple-700);
+}
+
+.lms-nav-link {
+	color: var(--lms-soft-ink);
+	font-weight: 600;
+}
+
+.lms-nav-link:visited,
+.lms-nav-link:active,
+.lms-nav-link:focus-visible {
+	color: var(--lms-soft-ink);
+}
+
+.lms-nav-link:hover {
+	color: var(--lms-purple-700);
+}
+
+.lms-pill {
+	background: var(--lms-purple-600);
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.lms-pill:visited,
+.lms-pill:active,
+.lms-pill:focus-visible {
+	color: #ffffff;
+}
+
+.lms-pill:hover {
+	background: var(--lms-purple-700);
+	color: #ffffff;
+}
+
+.lms-pill-outline {
+	background: #ffffff;
+	border: 1px solid var(--lms-purple-400);
+	color: var(--lms-purple-700);
+}
+
+.lms-pill-outline:visited,
+.lms-pill-outline:active,
+.lms-pill-outline:focus-visible {
+	color: var(--lms-purple-700);
+}
+
+.lms-pill-outline:hover {
+	background: var(--lms-purple-100);
+	color: var(--lms-purple-800);
+}

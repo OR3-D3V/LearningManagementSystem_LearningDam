@@ -1,0 +1,139 @@
+.sideBar {
+    --sb-bg: #2e1065;
+    --sb-text: #f8f5ff;
+    --sb-muted: #d9c6ff;
+    --sb-active-icon: #c4b5fd;
+    --sb-soft-accent: #a78bfa;
+
+    width: clamp(250px, 22vw, 290px);
+    min-height: 100%;
+    padding: 0.9rem 0.8rem;
+    color: var(--sb-text);
+    background-color: var(--sb-bg);
+    font-family: "Segoe UI", sans-serif;
+    box-shadow: 10px 0 30px rgba(46, 16, 101, 0.35);
+    border-right: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.sideBar-brand {
+    margin-bottom: 0.55rem;
+    padding: 0.55rem 0.55rem 0.9rem;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.35);
+}
+
+.sideBar-brandRow {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-bottom: 0.35rem;
+}
+
+.sideBar-logoMark {
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 0.35rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(140deg, #a78bfa, #7c3aed);
+    color: #ffffff;
+    font-size: 0.78rem;
+    box-shadow: 0 8px 14px rgba(124, 58, 237, 0.35);
+}
+
+.sideBar-brand h1 {
+    margin: 0;
+    letter-spacing: 0.01em;
+    font-size: 1.9rem;
+    line-height: 1;
+}
+
+.sideBar-kicker {
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    color: #c4b5fd;
+}
+
+.sideBar-brand small {
+    color: var(--sb-muted);
+    font-size: 0.8rem;
+}
+
+.sideBar-sectionLabel {
+    margin: 0.2rem 0.55rem 0.45rem;
+    color: var(--sb-soft-accent);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.sideBar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.sideBar-list li {
+    margin: 0;
+}
+
+.sideBar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.68rem 0.76rem;
+    border-radius: 0.45rem;
+    border: 1px solid transparent;
+    color: var(--sb-text);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.sideBar-link:visited,
+.sideBar-link:active,
+.sideBar-link:focus-visible {
+    color: var(--sb-text);
+}
+
+.sideBar-link:hover {
+    background: transparent;
+    color: var(--sb-text);
+}
+
+.sideBar-link.active {
+    background: transparent;
+    border-color: transparent;
+    color: var(--sb-text);
+}
+
+.sideBar-icon {
+    min-width: 1rem;
+    font-size: 0.96rem;
+    color: var(--sb-text);
+}
+
+.sideBar-link.logout {
+    margin-top: 0.65rem;
+    color: var(--sb-text);
+    border-top: 1px dashed rgba(167, 139, 250, 0.5);
+    border-radius: 0;
+    padding-top: 1rem;
+}
+
+.sideBar-link.logout .sideBar-icon {
+    color: var(--sb-text);
+}
+
+@media (max-width: 860px) {
+    .sideBar {
+        width: min(100%, 300px);
+    }
+}

@@ -9,7 +9,7 @@ const PORT = 3000
 app.use(cors(
     {
         origin: 'http://localhost:5173',
-        credentials: 'include'
+        credentials: true
     }
 ))
 
@@ -29,8 +29,6 @@ app.use('/auth', authRoutes)
 
 
 app.get('/', async (req, res) => {
-    
-
     res.json(result.rows)
 })
 
