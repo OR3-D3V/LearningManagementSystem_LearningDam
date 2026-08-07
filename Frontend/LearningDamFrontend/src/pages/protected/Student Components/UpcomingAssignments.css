@@ -1,0 +1,133 @@
+.ua-card {
+    background: #ffffff;
+    border: 1px solid #dfe7f4;
+    border-radius: 14px;
+    padding: 0.9rem;
+    box-shadow: 0 10px 24px rgba(13, 37, 74, 0.06);
+}
+
+.ua-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.ua-header h2 {
+    margin: 0;
+    font-size: 1.06rem;
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+}
+
+.ua-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.ua-view-all:hover {
+    color: #1e40af;
+}
+
+.ua-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.55rem;
+}
+
+.ua-item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.7rem;
+    align-items: center;
+    border: 1px solid #e5ecf7;
+    border-radius: 11px;
+    padding: 0.65rem 0.7rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.ua-item:hover {
+    border-color: #bfdbfe;
+    transform: translateY(-1px);
+}
+
+.ua-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    color: #1d4ed8;
+    background: linear-gradient(160deg, #dbeafe 0%, #eff6ff 100%);
+    border: 1px solid #bfdbfe;
+}
+
+.ua-item-content h3 {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.25;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.ua-item-content p {
+    margin: 0.22rem 0 0;
+    color: #475569;
+    font-size: 0.82rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.34rem;
+}
+
+.ua-days-left {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.28rem;
+    border-radius: 999px;
+    padding: 0.28rem 0.5rem;
+    font-size: 0.74rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.ua-days-left.urgent {
+    color: #b91c1c;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.ua-days-left.soon {
+    color: #b45309;
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+}
+
+.ua-days-left.normal {
+    color: #065f46;
+    background: #d1fae5;
+    border: 1px solid #a7f3d0;
+}
+
+@media (max-width: 768px) {
+    .ua-item {
+        grid-template-columns: auto 1fr;
+        align-items: start;
+    }
+
+    .ua-days-left {
+        grid-column: 2;
+        justify-self: start;
+    }
+}
